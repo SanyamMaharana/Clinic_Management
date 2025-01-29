@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #89f7fe, #66a6ff);
+            margin: 0;
+        }
+        .dashboard {
+            background: white;
+            padding: 30px;
+            max-width: 500px;
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .dashboard:hover {
+            transform: scale(1.05);
+        }
+        .dashboard h2 {
+            margin-bottom: 20px;
+            color: #333;
+            font-size: 24px;
+        }
+        .btn {
+            display: block;
+            width: 220px;
+            padding: 12px;
+            margin: 12px auto;
+            border: none;
+            background: linear-gradient(135deg, #6de133, #337d0f);
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .btn:hover {
+            background: linear-gradient(135deg, #337d0f, #6de133);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="dashboard">
+        <h2> Welcome Patient </h2>
+        <button class="btn" onclick="bookAppointment()">Book Appointment</button>
+        <button class="btn" onclick="viewAppointment()">View Appointment</button>
+        <button class="btn" onclick="editAppointment()">Edit Appointment</button>
+        <button class="btn" onclick="cancelAppointment()">Cancel Appointment</button>
+    </div>
+</body>
+</html>
